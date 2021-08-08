@@ -32,7 +32,6 @@ const skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
     let itemClass = this.parentNode.className;
-    console.log(itemClass);
 
     // for (i = 0; i < skillsContent.length; i++) {
     //     skillsContent[i].className = 'skills__content skills__close';
@@ -126,7 +125,6 @@ if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
     themeButton.classList[selectedIcon === 'fa-toggle-off' ? 'add' : 'remove'](iconTheme);
 }
-console.log(iconTheme);
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -137,5 +135,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-console.log(iconTheme);
