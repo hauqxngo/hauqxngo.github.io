@@ -50,16 +50,17 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#blog" class="nav__link">
-                            <i class="fas fa-camera-retro nav__icon"></i> Blog
+                        <a href="https://hauqxngo.com/blog/" class="nav__link" target="_blank">
+                            <i class="fas fa-pen nav__icon"></i> Blog
                         </a>
                     </li>
                 </ul>
                 <i class="fas fa-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
+            <div class="nav__btns tooltip">
                 <i class="fas fa-toggle-off change-theme" id="theme-button"></i>
+                <span class="tooltiptext">Change theme</span>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-bars"></i>
@@ -93,10 +94,10 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'm Hau</h1>
-                        <h3 class="home__subtitle">I'm a full-stack developer.</h3>
+                        <h1 class="home__title">I'm Hau</h1>
+                        <h3 class="home__subtitle">a progammer.</h3>
                         <p class="home__description">
-                            Welcome to my website! This is where I share my most recent projects and what I have learned about coding. 
+                            Welcome to my website! This is where I share my most recent projects and what I have learned about programming. 
                         </p>
                         <!-- <a href="#contact" class="button button--flex">
                             Contact me <i class="far fa-paper-plane button__icon"></i>
@@ -146,11 +147,11 @@
                         <!-- <a download="" href="assets/pdf/Hau_Ngo_Resume.pdf" class="button button--flex">
                             Download my resume<i class="fas fa-file-download button__icon"></i>
                         </a> -->
-                        <form action="mailto:hauqxngo@gmail.com">
+                        <a href="#contact">
                             <button class="button button--flex">
                                 Contact me <i class="far fa-paper-plane button__icon"></i>
                             </button>
-                        </form>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -290,18 +291,18 @@
         <!--====================================== PORTFOLIO =========================================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent projects</span>
+            <span class="section__subtitle">My recent projects</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
                     <!-- ======================== PORTFOLIO 1 ===================== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="" alt="" class="portfolio__img">
+                        <a href="https://card-wars.netlify.app/" target="_blank"><img src="assets/images/CardWars.png" alt="Card Wars" class="portfolio__img"></a>
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Project 1</h3>
-                            <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi excepturi voluptatum, consequatur velit voluptates ducimus reiciendis rerum, iste reprehenderit quo cumque nulla, nemo voluptatibus doloremque officiis recusandae earum sit!</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://card-wars.netlify.app/" target="_blank"><h3 class="portfolio__title">Card Wars</h3></a>
+                            <p class="portfolio__description">I had a chance to work in a team of three for a Hackathon project from Mintbean. We created a front-end War card game on the Star Wars movie theme.</p>
+                            <a href="https://card-wars.netlify.app/video/cardwars.mp4" class="button button--flex button--small portfolio__button" target="_blank">
                                 Demo <i class="fas fa-angle-double-right button__icon"></i>
                             </a>
                         </div>
@@ -309,19 +310,19 @@
 
                     <!-- ======================== PORTFOLIO 2 ===================== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <img src="" alt="" class="portfolio__img">
+                        <img src="assets/images/coming-soon.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Project 2</h3>
-                            <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi excepturi voluptatum, consequatur velit voluptates ducimus reiciendis rerum, iste reprehenderit quo cumque nulla, nemo voluptatibus doloremque officiis recusandae earum sit!</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <h3 class="portfolio__title">Coming Soon</h3>
+                            <p class="portfolio__description">I'm currently working hard to develop something cool. Stay tuned!</p>
+                            <!-- <a href="#portfolio" class="button button--flex button--small portfolio__button">
                                 Demo <i class="fas fa-angle-double-right button__icon"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
                     <!-- ======================== PORTFOLIO 3 ===================== -->
-                    <div class="portfolio__content grid swiper-slide">
+                    <!-- <div class="portfolio__content grid swiper-slide">
                         <img src="" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -331,7 +332,7 @@
                                 Demo <i class="fas fa-angle-double-right button__icon"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Add arrows -->
@@ -349,8 +350,8 @@
 
         <!--====================================== CONTACT =========================================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Say hi!</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -373,30 +374,30 @@
                     </div>
                 </div>
 
-                <!-- <form action="mailto:hauqxngo@gmail.com" class="contact__form grid">
+                <form action="mailto:hauqxngo@gmail.com" method="POST" enctype="text/plain" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" name="Name" placeholder="Your full name" class="contact__input" id="name">
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" name="Email" placeholder="Your email address" class="contact__input" id="email">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="Message" id="message" cols="0" rows="7" placeholder="Ask me anything..." class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <button class="button button-flex">
+                        <button class="button button--flex">
                             Send Message
-                            <i class="far fa-comment" butto__icon></i>
+                            <i class="far fa-comment button__icon"></i>
                         </button>
                     </div>
-                </form> -->
+                </form>
             </div>
         </section>
     </main>
@@ -407,7 +408,7 @@
             <div class="footer__container container grid">
                 <div>
                     <a href="#"><h1 class="footer__title">Hau Ngo</h1></a>
-                    <span class="footer__subtitle">Full-stack Developer</span>
+                    <span class="footer__subtitle">a programmer.</span>
                 </div>
 
                 <ul class="footer__links">
@@ -424,7 +425,7 @@
                     </li>
 
                     <li>
-                        <a href="#blog" class="footer__link">Blog</a>
+                        <a href="https://hauqxngo.com/blog/" class="footer__link" target="_blank">Blog</a>
                     </li>
                 </ul>
 
