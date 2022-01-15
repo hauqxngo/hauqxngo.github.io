@@ -631,6 +631,10 @@ img {
   margin-bottom: var(--mb-0-5);
 }
 
+.portfolio__title:hover {
+  color: var(--first-color);
+}
+
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
 }
