@@ -96,9 +96,6 @@
                         <p class="home__description">
                             Welcome to my portfolio! This is where I share my most recent projects and my journey into programming. 
                         </p>
-                        <!-- <a href="#contact" class="button button--flex">
-                            Contact me <i class="far fa-paper-plane button__icon"></i>
-                        </a> -->
                     </div>
                 </div>
 
@@ -123,11 +120,13 @@
                 <div class="about__data">
                     <p class="about__description">I love basketball. Basketball has been a big part of my life for over 10 years 🏀<br><br> I'm in a transition from Marketing to Software Engineer. I’m looking for opportunities to help people solve their problems using technology. If there's anything I can help you with, please don't hesitate to reach out!</p>
 
-                    <div class="about__button">
-                        <a href="#contact" class="button button--flex">
-                            Contact me<i class="far fa-paper-plane button__icon"></i>
-                        </a>
-                    </div>
+                    <form action="mailto:hauqxngo@gmail.com" method="POST" enctype="text/plain">
+                        <div class="about__button">
+                            <button class="button button--flex">
+                                Contact me<i class="far fa-paper-plane button__icon"></i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -461,7 +460,7 @@
               <!--==================== QUALIFICATION 3 ====================-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Marketing Administrative Assistant</h3>
+                  <h3 class="qualification__title">Social Media Manager</h3>
                   <span class="qualification__subtitle"
                     >Axoscape LLC - Houston, TX</span
                   >
@@ -516,8 +515,31 @@
 
                     <!-- ======================== PORTFOLIO 1 ===================== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <a href="https://to-cook.herokuapp.com/" target="_blank">
-                            <img src="assets/images/NomNom.png" alt="White Coconut Snowball Cupcakes" class="portfolio__img">
+                        <a href="https://joblyyy.surge.sh" target="_blank">
+                            <img src="assets/images/Jobly.png" alt="Homepage Green Navbar" class="portfolio__img">
+                        </a>
+
+                        <div class="portfolio__data">
+                            <a href="https://github.com/hauqxngo/ReactJoblyFrontend.git" target="_blank">
+                               <h3 class="portfolio__title">Jobly</h3> 
+                            </a>
+                            <p class="portfolio__description">
+                                <ul>
+                                    <li class="portfolio__detail">&#8226; A frontend React web application which allows users to search and apply for jobs at imaginary companies.</li>
+                                    <li class="portfolio__detail">&#8226; Implemented authentication and registration from backend API; plus a Demo User for testing convenience.</li>
+                                    <li class="portfolio__detail">&#8226; Tech stack: React, Reactstrap, Bootstrap, JWT.</li>
+                                </ul>
+                            </p>
+                            <a href="https://joblyyy.surge.sh" class="button button--flex button--small portfolio__button" target="_blank">
+                                Demo <i class="fas fa-angle-double-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ======================== PORTFOLIO 2 ===================== -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <a href="https://to-cook.herokuapp.com" target="_blank">
+                            <img src="assets/images/NomNom.png" alt="Halloween Dessert" class="portfolio__img">
                         </a>
 
                         <div class="portfolio__data">
@@ -526,9 +548,9 @@
                             </a>
                             <p class="portfolio__description">
                                 <ul>
-                                    <li>&#8226; A full-stack web application using Python, Flask, and PostgreSQL database.</li>
-                                    <li>&#8226; Generated a random recipe based on diets and restrictions through RESTful API.</li>
-                                    <li>&#8226; Implemented password hashing for authentication using Flask-Bcyrpt.</li>
+                                    <li class="portfolio__detail">&#8226; A full-stack web application using Python, Flask, and PostgreSQL database.</li>
+                                    <li class="portfolio__detail">&#8226; Generated a random recipe based on diets and restrictions through RESTful API.</li>
+                                    <li class="portfolio__detail">&#8226; Implemented password hashing for authentication using Flask-Bcyrpt.</li>
                                 </ul>
                             </p>
                             <a href="https://to-cook.herokuapp.com" class="button button--flex button--small portfolio__button" target="_blank">
@@ -537,9 +559,9 @@
                         </div>
                     </div>
 
-                    <!-- ======================== PORTFOLIO 2 ===================== -->
+                    <!-- ======================== PORTFOLIO 3 ===================== -->
                     <div class="portfolio__content grid swiper-slide">
-                        <a href="https://card-wars.netlify.app/" target="_blank">
+                        <a href="https://card-wars.netlify.app" target="_blank">
                             <img src="assets/images/CardWars.png" alt="Card Wars" class="portfolio__img">
                         </a>
 
@@ -549,9 +571,9 @@
                             </a>
                             <p class="portfolio__description">
                                 <ul>
-                                    <li>&#8226; Built a War card game online in one week for the Mintbean's Hackathon.</li>
-                                    <li>&#8226; Created a landing page and game board using HTML, CSS, and JavaScript.</li>
-                                    <li>&#8226; Collaborated with team members to optimize results.</li>
+                                    <li class="portfolio__detail">&#8226; Built a War card game online in one week for the Mintbean's Hackathon.</li>
+                                    <li class="portfolio__detail">&#8226; Created a landing page and game board using HTML, CSS, and JavaScript.</li>
+                                    <li class="portfolio__detail">&#8226; Collaborated with team members to optimize results.</li>
                                 </ul>
                             </p>
                             <a href="https://card-wars.netlify.app" class="button button--flex button--small portfolio__button" target="_blank">

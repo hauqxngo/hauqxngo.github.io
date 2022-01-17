@@ -639,6 +639,10 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
+.portfolio__detail {
+  margin-bottom: var(--mb-0-5);
+}
+
 .portfolio__button {
   margin-top: 10px;
 }
